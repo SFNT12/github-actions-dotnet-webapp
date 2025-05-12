@@ -11,5 +11,6 @@ jobs:
     
     steps:
       - name: Exibir data e hora
-        run: |
-         echo `Teste - Data e Hora Atual: $(date)`
+         run:|
+          echo "Teste - Data e Hora Atual:"
+          echo "$(date)"
