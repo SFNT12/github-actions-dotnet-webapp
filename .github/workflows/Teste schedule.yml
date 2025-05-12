@@ -1,0 +1,14 @@
+name: Teste schedule
+
+# Executa de hora em hora
+on:
+  schedule:
+    - cron: '0 * * * *' 
+
+jobs:
+  log_datetime:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Exibir data e hora
+        run: echo "Teste - Data e Hora Atual: $(date)"
